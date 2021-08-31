@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #183059;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 250px;
+}
+.coming-soon {
+  font-size: 57px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: -110px;
+  padding: 10px;
+  text-align: center;
+  animation: scale 2s infinite linear;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+.container div {
+  display: flex;
+  width: 150px;
+  margin: 5px;
+  padding: 17px 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #183059;
+  letter-spacing: 3px;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 57px;
+}
+.days-wrapper,
+.hours-wrapper,
+.minutes-wrapper,
+.seconds-wrapper {
+  border-radius: 5px;
+}
+.days-wrapper {
+  background-color: #ef2f3c;
+}
+.hours-wrapper {
+  background-color: #f6f4f3;
+}
+.minutes-wrapper {
+  background-color: #276fbf;
+}
+.seconds-wrapper {
+  background-color: #f0a202;
+}
+.label {
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 642px) {
+  .coming-soon {
+    margin-top: 20px;
+  }
+  .container {
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+}
