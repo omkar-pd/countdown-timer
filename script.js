@@ -3,7 +3,7 @@ const daysHtml = document.querySelector(".days");
 const hoursHtml = document.querySelector(".hours");
 const minutesHtml = document.querySelector(".minutes");
 const secondsHtml = document.querySelector(".seconds");
-const c = document.getElementById("wrapper");
+
 const interval = setInterval(function updateDate() {
   const now = new Date();
   const total = deadline - now;
